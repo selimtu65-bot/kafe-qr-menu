@@ -46,3 +46,36 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+.urun-listesi {
+    list-style-type: none;
+    padding: 0;
+}
+
+.urun-listesi li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #cccccc;
+}
+
+.fiyat {
+    color: #bf360c;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #d7ccc8;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #5d4037;
+    color: #ffffff;
+}
