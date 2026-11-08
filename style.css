@@ -79,3 +79,40 @@ th {
     background-color: #5d4037;
     color: #ffffff;
 }
+
+.form-grup {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3e2723;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #bcaaa4;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.buton {
+    background-color: #5d4037;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buton:hover {
+    background-color: #3e2723;
+}
+
+.toplam-tutar {
+    margin-top: 15px;
+    font-size: 18px;
+}

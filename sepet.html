@@ -21,8 +21,35 @@
 
     <main>
         <section>
-            <h2>Sipariş Sepetim</h2>
-            <p>Menüden seçilen ürünler ve toplam hesap tutarı bu sayfada yer alacaktır.</p>
+            <h2>Seçilen Ürünler (Masa Sepeti)</h2>
+            <p>Menüden seçtiğiniz ürünler aşağıda yer almaktadır:</p>
+            <ul class="urun-listesi">
+                <li><strong>1x Caffè Latte</strong> - Orta Boy <span class="fiyat">85 TL</span></li>
+                <li><strong>1x San Sebastian Cheesecake</strong> - Porsiyon <span class="fiyat">130 TL</span></li>
+            </ul>
+            <p class="toplam-tutar"><strong>Toplam Hesap Tutarı:</strong> <span class="fiyat">215 TL</span></p>
+        </section>
+
+        <section>
+            <h2>Siparişi Tamamla</h2>
+            <form id="siparis-formu">
+                <div class="form-grup">
+                    <label for="masa-no">Masa Numaranız:</label>
+                    <select id="masa-no" name="masaNo">
+                        <option value="1">Masa 1 (Bahçe)</option>
+                        <option value="2">Masa 2 (Bahçe)</option>
+                        <option value="3">Masa 3 (İç Mekan)</option>
+                        <option value="4">Masa 4 (Pencere Kenarı)</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="siparis-notu">Sipariş Notu:</label>
+                    <input type="text" id="siparis-notu" name="siparisNotu" placeholder="Örn: Kahve çok sıcak olmasın">
+                </div>
+
+                <button type="submit" class="buton">Siparişi Mutfağa İlet</button>
+            </form>
         </section>
     </main>
 

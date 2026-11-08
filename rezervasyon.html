@@ -21,8 +21,48 @@
 
     <main>
         <section>
-            <h2>Masa Rezervasyonu</h2>
-            <p>Müşterilerin masa ayırtabileceği rezervasyon formu bu sayfaya eklenecektir.</p>
+            <h2>Masa Rezervasyon Formu</h2>
+            <p>Kafemizde önceden masa ayırtmak için aşağıdaki formu doldurabilirsiniz.</p>
+
+            <form id="rezervasyon-formu">
+                <div class="form-grup">
+                    <label for="ad-soyad">Adınız Soyadınız:</label>
+                    <input type="text" id="ad-soyad" name="adSoyad" placeholder="Örn: Ahmet Yılmaz">
+                </div>
+
+                <div class="form-grup">
+                    <label for="telefon">Telefon Numaranız:</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="Örn: 0555 123 45 67">
+                </div>
+
+                <div class="form-grup">
+                    <label for="tarih">Rezervasyon Tarihi:</label>
+                    <input type="date" id="tarih" name="tarih">
+                </div>
+
+                <div class="form-grup">
+                    <label for="saat">Rezervasyon Saati:</label>
+                    <input type="time" id="saat" name="saat">
+                </div>
+
+                <div class="form-grup">
+                    <label for="kisi-sayisi">Kişi Sayısı:</label>
+                    <select id="kisi-sayisi" name="kisiSayisi">
+                        <option value="1">1 Kişi</option>
+                        <option value="2">2 Kişi</option>
+                        <option value="3">3 Kişi</option>
+                        <option value="4">4 Kişi</option>
+                        <option value="5+">5 ve Üzeri (Grup)</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="notlar">Özel İstek ve Notlarınız:</label>
+                    <textarea id="notlar" name="notlar" rows="4" placeholder="Pencere kenarı, doğum günü kutlaması vb. notlarınızı yazabilirsiniz."></textarea>
+                </div>
+
+                <button type="submit" class="buton">Rezervasyon Talebi Gönder</button>
+            </form>
         </section>
     </main>
 

@@ -21,8 +21,45 @@
 
     <main>
         <section>
-            <h2>Menü Yönetim Paneli</h2>
-            <p>Menüye yeni ürün ekleme, güncelleme ve silme işlemleri bu sayfadan yapılacaktır.</p>
+            <h2>Menüye Yeni Ürün Ekle</h2>
+            <p>Kafe menüsüne yeni bir içecek veya tatlı eklemek için aşağıdaki yönetim formunu kullanabilirsiniz.</p>
+
+            <form id="urun-ekle-formu">
+                <div class="form-grup">
+                    <label for="urun-adi">Ürün Adı:</label>
+                    <input type="text" id="urun-adi" name="urunAdi" placeholder="Örn: Caramel Macchiato">
+                </div>
+
+                <div class="form-grup">
+                    <label for="kategori">Kategori Seçiniz:</label>
+                    <select id="kategori" name="kategori">
+                        <option value="sicak">Sıcak İçecekler</option>
+                        <option value="soguk">Soğuk İçecekler</option>
+                        <option value="tatli">Tatlılar</option>
+                    </select>
+                </div>
+
+                <div class="form-grup">
+                    <label for="fiyat">Ürün Fiyatı (TL):</label>
+                    <input type="number" id="fiyat" name="fiyat" placeholder="Örn: 90">
+                </div>
+
+                <div class="form-grup">
+                    <label for="aciklama">Ürün Açıklaması:</label>
+                    <textarea id="aciklama" name="aciklama" rows="3" placeholder="Ürünün içeriği hakkında kısa bilgi yazınız."></textarea>
+                </div>
+
+                <button type="submit" class="buton">Ürünü Menüye Kaydet</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Yönetilen Ürün Listesi</h2>
+            <p>İlerleyen haftalarda JavaScript ve localStorage ile eklenen ürünler burada listelenecek, güncellenecek ve silinecektir.</p>
+            <ul class="urun-listesi">
+                <li><strong>Espresso</strong> (Sıcak İçecekler) - <span class="fiyat">60 TL</span></li>
+                <li><strong>Cold Brew</strong> (Soğuk İçecekler) - <span class="fiyat">95 TL</span></li>
+            </ul>
         </section>
     </main>
 
