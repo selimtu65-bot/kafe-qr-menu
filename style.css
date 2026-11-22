@@ -1,50 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f5ebe6;
     color: #333333;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     background-color: #3e2723;
     color: #ffffff;
-    padding: 20px;
-    text-align: center;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 nav ul {
     list-style-type: none;
+    margin: 0;
     padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 nav ul li a {
     color: #ffcc80;
     text-decoration: none;
     font-weight: bold;
+    padding: 6px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #5d4037;
+    border-radius: 4px;
 }
 
 main {
-    padding: 20px;
+    flex: 1;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 20px;
 }
 
 section {
     background-color: #ffffff;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
     border: 1px solid #d7ccc8;
+    border-radius: 6px;
+}
+
+.hero {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.hero h1 {
+    color: #3e2723;
+    margin-top: 0;
+}
+
+.bilgi-kapsayici {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.bilgi-karti {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #d7ccc8;
+    border-radius: 6px;
+}
+
+.bilgi-karti h2 {
+    color: #3e2723;
+    margin-top: 0;
+}
+
+.urun-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.urun-karti {
+    background-color: #faf6f4;
+    border: 1px solid #d7ccc8;
+    border-radius: 6px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.urun-karti h3 {
+    margin: 0 0 8px 0;
+    color: #3e2723;
+}
+
+.urun-karti p {
+    margin: 0 0 12px 0;
+    font-size: 14px;
+    color: #555555;
 }
 
 footer {
     background-color: #3e2723;
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 .urun-listesi {
@@ -60,7 +144,7 @@ footer {
 .fiyat {
     color: #bf360c;
     font-weight: bold;
-    margin-left: 10px;
+    font-size: 16px;
 }
 
 table {
@@ -100,12 +184,15 @@ input, select, textarea {
 }
 
 .buton {
+    display: inline-block;
     background-color: #5d4037;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .buton:hover {
